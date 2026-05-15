@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Pixabay Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <!-- <load src="./partials/header.html" icon-path="img/sprite.svg#logo" /> -->
 
-    <main></main>
+    <main class="container">
+      <!-- Loads the specified .html file -->
+      <form class="form">
+        <label>
+          <input
+            type="text"
+            name="searchtext"
+            placeholder="Search images..."
+            required
+          />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+
+      <ul class="gallery"></ul>
+      <div class="loader"></div>
+      <button type="button" class="btn-load-more">Load more</button>
+    </main>
 
     <!-- <load src="./partials/footer.html" /> -->
 
